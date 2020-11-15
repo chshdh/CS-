@@ -1,0 +1,38 @@
+
+#include<iostream>
+ 
+using namespace std;
+int main()
+{
+	                int n, m;
+			int k;
+ 
+			while (cin >> k)
+			{
+ 
+				while (k--)
+				{
+					
+					cin >> n;
+					int sum = 0;
+					while (n--)
+					{
+						cin >> m;
+						sum += m;
+					}
+					if (k > 0)
+					{
+						cout << sum << endl << endl;
+					}
+					else
+					{
+						cout << sum << endl;
+					}
+				}
+ 
+			}
+			
+			
+ 
+	return 0;
+}
