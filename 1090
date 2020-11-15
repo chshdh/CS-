@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a = 0, b = 0;
+	int n = 0;
+	int sum;
+	int c;
+	while (cin >> a >> b&&a,b!=0) {
+	
+
+
+			sum = a + b;
+
+
+			cout << sum << endl;
+		}
+	}
+}
