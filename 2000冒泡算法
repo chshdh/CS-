@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+//#include<math.h>
+ 
+void main()
+{
+	char t,x,y,z;
+ 
+	while (scanf("%c%c%c", &x, &y, &z)!= EOF)
+	{
+		getchar();
+		if (x > y)
+		{
+			t = x;
+			x = y;
+			y = t;
+		}
+		if (x > z)
+		{
+			t = x;
+			x = z;
+			z = t;
+		}
+	    if (y > z)
+		{
+			t = y;
+			y = z;
+			z = t;
+		}
+		
+		printf("%c %c %c\n",x,y,z);
+		
+ 
+	}
+		
+	system("pause");
+ 
+}
