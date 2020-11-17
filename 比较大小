@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int i, n, l;
+	
+	cin >> l;
+	int max = l, min = l, sum = l;
+	for (i = 1; cin>>l&&l!=0; i++) {
+		cin >> l;
+		if (l > max) max = l;
+		if (l < min) min = l;
+	}
+	cout << max << endl << min << endl;
+	return 0;
+}
