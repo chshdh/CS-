@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int a, b;
+	int c, d, e;
+	int n = 0;
+	while (cin >> a >> b&& a <= b && a >= 100 && b >= 100 &&
+		a <= 999 && b <= 999) {
+		for (int i = a; i <= b; i++) {
+			c = i / 100;
+			d = i/10%10;
+			e = i %10;
+			if (i == c * c * c + d * d * d + e * e * e) {
+				cout << i<<" ";
+				n++;
+			
+			}
+			if (i == b)
+				cout << endl;
+		
+		}
+		if (n == 0)
+			cout << "no"<<endl;
+	}
+}
