@@ -1,0 +1,30 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main() {
+	int x, y;
+	int  q = 0;
+	int sum = 0;
+	int w;
+	while (cin >> x >> y && x >= -39 && x < y && y <= 50 && x != 0 || y != 0) {
+		
+		
+		for (int i = x; i <= y; i++) {
+			sum = i * i + i + 41;
+			for (int j = 2;  j< sum; j++) {
+				if (sum % j == 0) {
+				
+					q++;
+					
+				}
+			}
+			
+		}
+		if (q == 0) cout << "OK" << endl;
+		else cout << "Sorry" << endl;
+		
+		sum = 0;
+		q = 0;
+	}
+	
+}
